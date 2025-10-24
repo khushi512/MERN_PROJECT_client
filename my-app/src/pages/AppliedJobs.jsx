@@ -13,7 +13,7 @@ function AppliedJobs() {
       try {
         const data = await getAppliedJobs();
         setJobs(data);
-      } catch (err) {
+      } catch {
         setError("Failed to load applied jobs.");
       } finally {
         setLoading(false);

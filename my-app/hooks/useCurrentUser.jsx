@@ -27,6 +27,6 @@ function useCurrentUser(){
             
         }
         fetchData();
-    }, []);
+    }, [dispatch]);
 }
 export default useCurrentUser;
