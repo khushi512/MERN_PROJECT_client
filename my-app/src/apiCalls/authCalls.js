@@ -43,7 +43,7 @@ export const getCurrentUser = async () => {
   try {
     const response = await api.get('/api/user/profile');
     return response.data;
-  } catch (error) {
+  } catch {
     return null;
   }
 };

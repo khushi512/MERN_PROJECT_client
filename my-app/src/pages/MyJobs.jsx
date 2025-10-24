@@ -13,7 +13,7 @@ function MyJobs() {
       try {
         const data = await getMyJobs();
         setJobs(data);
-      } catch (err) {
+      } catch {
         setError("Failed to load your jobs.");
       } finally {
         setLoading(false);
